@@ -1,6 +1,12 @@
+// Compat
+navigator.getUserMedia = ( navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia)
+
 document.querySelector('#start').addEventListener('click', function (e) {
 
-    navigator.getUserMedia({
+    MediaDevices.getUserMedia({
         video: true,
         audio: true
     }, function (stream) {
