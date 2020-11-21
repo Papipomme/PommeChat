@@ -1,0 +1,14 @@
+{
+  "name": "PommeChat",
+  "version": "v0.0.1",
+  "description": "A WebRTC app coded for my class.",
+  "repository": "https://github.com/Papipomme/PommeChat",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.11.6"
+  }
+}
