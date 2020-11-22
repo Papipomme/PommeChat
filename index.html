@@ -22,20 +22,22 @@
     <div class="row">
         <div class="col-sm-6">
             <h2>Réception</h2>
-            <video id="received-video" width="100%" height="400px"></video>
+            <video id="receiver-video" width="100%" height="400px"></video>
         </div>
         <div class="col-sm-6">
             <h2>Envoi</h2>
             <video id="emitter-video" width="100%" height="400px"></video>
             <p>
-                <button id="startvid" class="btn btn-success" disabled>Activer la caméra</button>
-                <button id="startmic" class="btn btn-success">Activer le micro</button>
                 <button id="overbtn" class="btn btn-primary"><img height="24px" id="sound-unmute" src="assets/img/volume-high-outline.svg"/><img height="24px" hidden id="sound-mute" src="assets/img/volume-mute-outline.svg"/></button>
             </p>
         </div>
+        <textarea id="incoming"></textarea>
+        <button id="do-exchange" class="btn btn-success">Faire l'échange</button>
+        <textarea id="outgoing"></textarea>
     </div>
 </div>
 
+    <script src="assets/js/simplepeer.min.js"></script>
     <script src="main.js"></script>
 
 </body>
