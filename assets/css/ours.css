@@ -1,3 +1,15 @@
 .container {
-    margin-top: 5rem;
+    margin-top: 25px;
+    height: auto;
+    position: relative;
+    border: 3px solid lightgray;
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+.container h2,h1,textarea {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.container button#do-exchange {
+
 }

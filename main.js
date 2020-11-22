@@ -9,7 +9,7 @@ document.getElementById("incoming").value=""
 document.getElementById("outgoing").value=""
 
 document.getElementById('overbtn').addEventListener('click', () => {
-    let vid = document.getElementById('emitter-video')
+    let vid = document.getElementById('receiver-video')
     if(vid.muted){
         vid.muted = false
         document.getElementById("sound-unmute").hidden = false
@@ -100,6 +100,8 @@ document.getElementById("do-exchange").addEventListener("click", () => {
       audio: true,
       video: true
   }
+  let vid = document.getElementById('emitter-video')
+    vid.muted = true
   if (typeof navigator.mediaDevices.getUserMedia === 'undefined') {
       navigator.mediaDevices.getUserMedia(constrains, handleVideo, errorHandler)
   } else {
