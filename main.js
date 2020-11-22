@@ -5,6 +5,7 @@ navigator.getUserMedia = (
     navigator.msGetUserMedia
 )
 
+
 function handleVideo(stream) {
     let emitterVideo = document.querySelector('#emitter-video')
     emitterVideo.srcObject = stream
@@ -15,9 +16,8 @@ function errorHandler(err) {
   console.log(err)
 }
 
-document.querySelector('#start').addEventListener('click', function (e) {
+document.querySelector('#startmic').addEventListener('click', function (e) {
   const constrains = {
-      video: true,
       audio: true
   }
 
@@ -27,3 +27,18 @@ document.querySelector('#start').addEventListener('click', function (e) {
       navigator.mediaDevices.getUserMedia(constrains).then(handleVideo).catch(errorHandler);
   }
 })
+
+
+// To add - and to reduce
+
+//document.querySelector('#startvid').addEventListener('click', function (e) {
+//    const constrains = {
+//        video: true
+//    }
+//
+//    if (typeof navigator.mediaDevices.getUserMedia === 'undefined') {
+//        navigator.mediaDevices.getUserMedia(constrains, handleVideo, errorHandler)
+//    } else {
+//        navigator.mediaDevices.getUserMedia(constrains).then(handleVideo).catch(errorHandler);
+//    }
+//})
