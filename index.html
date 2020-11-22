@@ -3,17 +3,13 @@
     <title>PommeChat</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="icon" href="public/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/ours.css">
+    <link rel="icon" href="assets/img/favicon.ico">
 </head>
-<style>
-    .container {
-        margin-top: 5rem;
-    }
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <img src="public/img/logo.png" width="15%" alt="PommeChat" loading="lazy">
+    <img src="assets/img/logo.png" width="15%" alt="PommeChat" loading="lazy">
     <form class="form-inline ml-auto" action="#">
         <div class="md-form my-0">
             <input class="form-control mr-2" type="text" placeholder="Code de discussion" aria-label="Code">
@@ -34,14 +30,13 @@
             <p>
                 <button id="startvid" class="btn btn-success" disabled>Activer la caméra</button>
                 <button id="startmic" class="btn btn-success">Activer le micro</button>
-                <button id="overbtn" class="btn btn-primary"><i id="mutebtn" style="font-size: 20px; text-align: center;" class="fas fa-volume-up"></i></button>
+                <button id="overbtn" class="btn btn-primary"><img width="100%" height="24px" id="sound-unmute" src="assets/img/volume-high-outline.svg"/><img width="100%" height="24px" hidden id="sound-mute" src="assets/img/volume-mute-outline.svg"/></button>
             </p>
         </div>
     </div>
 </div>
 
     <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/5c377d9019.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

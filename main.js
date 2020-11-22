@@ -7,19 +7,20 @@ navigator.getUserMedia = (
 
 document.querySelector('#overbtn').addEventListener('click', function (e) {
     let vid = document.getElementById('emitter-video')
-    let mutebtn = document.getElementById("mutebtn")
     if(vid.muted){
         vid.muted = false
-        mutebtn.className = "fas fa-volume-up"
+        document.getElementById("sound-unmute").hidden = false
+        document.getElementById("sound-mute").hidden = true
     } else {
         vid.muted = true
-        mutebtn.className = "fas fa-volume-mute"
+        document.getElementById("sound-unmute").hidden = true
+        document.getElementById("sound-mute").hidden = false
     }
 })
 
 
 function handleVideo(stream) {
-    let emitterVideo = document.querySelector('#emitter-video')
+    let emitterVideo = document.getElementById('emitter-video')
     emitterVideo.srcObject = stream
     emitterVideo.play()
 }
@@ -28,7 +29,7 @@ function errorHandler(err) {
   console.log(err)
 }
 
-document.querySelector('#startmic').addEventListener('click', function (e) {
+document.getElementById('startmic').addEventListener('click', function (e) {
     let startMicButton = document.getElementById("startmic")
     const constrains = {
         audio: true
