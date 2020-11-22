@@ -3,6 +3,7 @@
     <title>PommeChat</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="public/img/favicon.ico">
 </head>
 <style>
     .container {
@@ -25,20 +26,22 @@
     <div class="row">
         <div class="col-sm-6">
             <h2>Réception</h2>
-            <video id="received-video" width="100%" height="400px" controls></video>
+            <video id="received-video" width="100%" height="400px"></video>
         </div>
         <div class="col-sm-6">
             <h2>Envoi</h2>
-            <video id="emitter-video" width="100%" height="400px" controls></video>
+            <video id="emitter-video" width="100%" height="400px"></video>
             <p>
                 <button id="startvid" class="btn btn-success" disabled>Activer la caméra</button>
                 <button id="startmic" class="btn btn-success">Activer le micro</button>
+                <button id="overbtn" class="btn btn-primary"><i id="mutebtn" style="font-size: 20px; text-align: center;" class="fas fa-volume-up"></i></button>
             </p>
         </div>
     </div>
 </div>
 
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/5c377d9019.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
