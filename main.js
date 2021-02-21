@@ -98,7 +98,7 @@ function handleVideo(stream) {
 document.getElementById("do-exchange").addEventListener("click", () => {
   const constrains = {
       audio: true,
-      video: true
+      video: false
   }
   let vid = document.getElementById('emitter-video')
     vid.muted = true
