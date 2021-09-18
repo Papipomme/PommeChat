@@ -5,5 +5,5 @@
 <h2 align="center">PommeChat, a WebRTC (Audio/Vocal) WebApp coded for my class (and more, who knows?).</h2>
 
 <p align="center">
-	The project is no longer maintained, feel free to contribute.
+	The project is no longer maintained
 </p>
